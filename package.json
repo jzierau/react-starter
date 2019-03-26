@@ -1,0 +1,65 @@
+{
+  "name": "dareu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://4b29e0ac1b51d9f6a0e3ab9f0414b6a9c3d46663@github.com/jzierau/dareu.git"
+  },
+  "author": "Jeremy Zierau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jzierau/dareu/issues"
+  },
+  "homepage": "https://github.com/jzierau/dareu#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "node-sass": "^4.11.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-redux": "^6.0.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "babel-preset-node6": "^11.0.0",
+    "clean-webpack-plugin": "^1.0.1",
+    "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "^2.1.0",
+    "eslint": "4.19.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jest": "^21.15.1",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.0.1",
+    "start-server-webpack-plugin": "^2.2.5",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "npm run build && NODE_ENV=development webpack-dev-server",
+    "build": "NODE_ENV=production node --max_old_space_size=4096 node_modules/.bin/webpack"
+  }
+}
