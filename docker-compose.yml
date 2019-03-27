@@ -1,0 +1,15 @@
+version: '2'
+services:
+  web:
+    image: dareu
+    restart: always
+    ports:
+      - "3000:3000"
+    volumes:
+      - .
+    networks:
+      - dareunetwork
+
+networks:
+    dareunetwork:
+        driver: bridge

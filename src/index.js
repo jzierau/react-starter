@@ -5,7 +5,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 
-import Routes from './core/routes';
+import { Routr } from './core';
 import allReducers from './reducers';
 
 import './scss/styles.scss';
@@ -17,7 +17,7 @@ const store = createStore(allReducers, composeEnhancers(applyMiddleware(thunk)))
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter path="/">
-      <Routes />
+      <Routr />
     </BrowserRouter>
   </Provider>,
   document.getElementById('root'),

@@ -1,0 +1,8 @@
+node_modules
+.babelrc
+.eslintignore
+.eslintrc
+.gitignore
+docker-compose.yml
+Dockerfile
+README.md
