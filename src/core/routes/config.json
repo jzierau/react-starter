@@ -1,0 +1,9 @@
+{
+  "routes": [
+    {
+      "isPublic": true,
+      "path": "/(/|)/",
+      "permissions": []
+    }
+  ]
+}

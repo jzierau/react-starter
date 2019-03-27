@@ -1,4 +1,3 @@
-src/serviceWorker
+.DS_Store
 build
-scripts
-external
+node_modules
